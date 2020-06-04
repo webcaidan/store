@@ -4,6 +4,8 @@ import '../App.css';
 import menu1 from '../res/bar2/menu3.png';
 import menu2 from '../res/bar2/menu2.png';
 import menu3 from '../res/bar2/menu1.png';
+
+import link from './const_variable';
 import Qr from '../components/qr'
 
 
@@ -28,7 +30,7 @@ class Carta extends Component {
                <img  style={imgStyle} src={menu1}/>
                <img  style={imgStyle} src={menu2}/>
                <img  style={imgStyle} src={menu3}/>
-               <Qr link={'https://a15zehcheche.github.io/raconet/#/bar2'}/>
+               <Qr link={`${link.prefix}/bar2`}/>
            </div>
    
         )
