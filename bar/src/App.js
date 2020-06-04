@@ -12,7 +12,7 @@ import Qr from './screen/qr'
 
 function App() {
   return (
-    <div>
+    <div className="app">
           <Route exact={true}  path="/" component={HomePage}  />
           <Route path="/bar" component={Carta} /> 
           <Route path="/bar1" component={Carta1} />

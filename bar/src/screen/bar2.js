@@ -26,7 +26,7 @@ class Carta extends Component {
             'width':'100%',
         }
         return (
-           <div style={mystyle} class="share m-1" >
+           <div className="bar2" style={mystyle} class="share m-1" >
                <img  style={imgStyle} src={menu1}/>
                <img  style={imgStyle} src={menu2}/>
                <img  style={imgStyle} src={menu3}/>

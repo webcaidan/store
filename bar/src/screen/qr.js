@@ -27,7 +27,7 @@ class Qr extends Component {
             'width':'100%',
         }
         return (
-           <div style={mystyle} class="d-flex justify-content-center align-items-center p-5">
+           <div style={mystyle} className="d-flex justify-content-center align-items-center p-5">
                 <canvas id="canvas"></canvas>
                 <script src="bundle.js"></script> 
            </div>
