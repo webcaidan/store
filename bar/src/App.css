@@ -1,0 +1,228 @@
+.App {}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main_box {
+  background-image: url(./res/Brandhill-Web-Background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+
+}
+
+@media (max-width: 767px) {
+  .main_box {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+  }
+
+}
+
+
+/* carousel */
+.title {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  color: white;
+  font-size: 5.5rem;
+
+
+}
+
+.bradcam_area {
+
+  filter: blur(2px);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 215px 0 150px 0;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .bradcam_area {
+    padding: 150px 0 150px 0;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .bradcam_area {
+    padding: 100px 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+
+.breadcam_bg {
+  background-image: url(./res/carousel-bg.png);
+  /*background-color: green;*/
+}
+
+.overlay {
+  position: relative;
+  z-index: 0;
+}
+
+/*-------------------------------------------------*/
+
+
+/* card */
+/* external css: flickity.css, fullscreen.css */
+/* external css: flickity.css, fullscreen.css */
+
+
+.carousel {
+  background: none;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.carousel-cell img {
+  -webkit-box-shadow: 9px 23px 32px 1px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 9px 23px 32px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 9px 23px 32px 1px rgba(0, 0, 0, 0.38);
+}
+
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+
+.carousel-cell-image {
+  display: block;
+  max-height: 100%;
+}
+
+.carousel.is-fullscreen .carousel-cell-image {
+  max-width: 100%;
+}
+
+
+
+.carousel-cell {
+  min-height: 700px;
+  background: none;
+}
+
+@media (max-width: 767px) {
+  .carousel-cell {
+    min-height: 300px;
+  }
+
+}
+
+/*-------------------------------------------------*/
+
+
+/* footer */
+.site-footer {
+  background-color: #26272b;
+  padding: 10px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5
+}
+
+.site-footer hr.small {
+  margin: 20px 0
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.copyright-text {
+  margin: 0
+}
+
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px
+  }
+}
+
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom: 0
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center
+  }
+}
+
+/*-------------------------------------------------*/
+
+.share {
+  width: '100%';
+  margin: 0 auto;
+  float: none;
+}
+
+@media (min-width: 1000px) {
+  .share {
+    width: 500px;
+    margin: 0 auto;
+    float: none;
+  }
+
+}
